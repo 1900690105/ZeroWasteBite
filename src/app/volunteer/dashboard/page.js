@@ -111,13 +111,13 @@ const VolunteerDashboard = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 font-sans">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 font-sans">
       {/* Topbar */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="bg-gradient-to-r from-green-400 to-green-600 p-3 rounded-full shadow-lg">
+              <div className="bg-linear-to-r from-green-400 to-green-600 p-3 rounded-full shadow-lg">
                 <Package className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -141,7 +141,7 @@ const VolunteerDashboard = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
         {/* Stats Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          <div className="bg-gradient-to-br from-green-400 to-green-600 p-6 rounded-2xl shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-linear-to-br from-green-400 to-green-600 p-6 rounded-2xl shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-green-100 text-sm font-medium">
@@ -152,7 +152,7 @@ const VolunteerDashboard = () => {
               <TrendingUp className="w-12 h-12 opacity-80" />
             </div>
           </div>
-          <div className="bg-gradient-to-br from-orange-400 to-orange-600 p-6 rounded-2xl shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-linear-to-br from-orange-400 to-orange-600 p-6 rounded-2xl shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-orange-100 text-sm font-medium">
@@ -163,7 +163,7 @@ const VolunteerDashboard = () => {
               <Package className="w-12 h-12 opacity-80" />
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-400 to-blue-600 p-6 rounded-2xl shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-linear-to-br from-blue-400 to-blue-600 p-6 rounded-2xl shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-blue-100 text-sm font-medium">
@@ -183,7 +183,7 @@ const VolunteerDashboard = () => {
               onClick={() => setActiveTab("nearby")}
               className={`flex-1 py-4 px-6 text-center font-semibold transition-all duration-300 ${
                 activeTab === "nearby"
-                  ? "bg-gradient-to-r from-green-400 to-green-600 text-white"
+                  ? "bg-linear-to-r from-green-400 to-green-600 text-white"
                   : "text-gray-600 hover:bg-gray-50"
               }`}
             >
@@ -196,7 +196,7 @@ const VolunteerDashboard = () => {
               onClick={() => setActiveTab("mypickups")}
               className={`flex-1 py-4 px-6 text-center font-semibold transition-all duration-300 ${
                 activeTab === "mypickups"
-                  ? "bg-gradient-to-r from-green-400 to-green-600 text-white"
+                  ? "bg-linear-to-r from-green-400 to-green-600 text-white"
                   : "text-gray-600 hover:bg-gray-50"
               }`}
             >
@@ -278,7 +278,7 @@ const VolunteerDashboard = () => {
 
               {/* Map Placeholder */}
               <div className="p-4 border-b border-gray-200">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-xl h-64 flex items-center justify-center relative overflow-hidden">
+                <div className="bg-linear-to-br from-green-100 to-green-200 rounded-xl h-64 flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-green-500 opacity-10">
                     <svg
                       className="w-full h-full"
@@ -308,7 +308,7 @@ const VolunteerDashboard = () => {
                 {filteredDonations.map((donation) => (
                   <div
                     key={donation.id}
-                    className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-5 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200"
+                    className="bg-linear-to-br from-white to-gray-50 rounded-xl p-5 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200"
                   >
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                       <div className="flex-1">
@@ -372,7 +372,7 @@ const VolunteerDashboard = () => {
                       <button className="flex-1 bg-white border-2 border-green-600 text-green-600 py-2.5 px-4 rounded-xl font-semibold hover:bg-green-50 transition-all duration-300 shadow-sm hover:shadow-md">
                         View Details
                       </button>
-                      <button className="flex-1 bg-gradient-to-r from-green-400 to-green-600 text-white py-2.5 px-4 rounded-xl font-semibold hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                      <button className="flex-1 bg-linear-to-r from-green-400 to-green-600 text-white py-2.5 px-4 rounded-xl font-semibold hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                         Accept Pickup
                       </button>
                     </div>
@@ -388,7 +388,7 @@ const VolunteerDashboard = () => {
               {myPickups.map((pickup) => (
                 <div
                   key={pickup.id}
-                  className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-5 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200"
+                  className="bg-linear-to-br from-white to-gray-50 rounded-xl p-5 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
@@ -436,7 +436,7 @@ const VolunteerDashboard = () => {
                   </div>
 
                   {pickup.status === "in-progress" && (
-                    <button className="w-full bg-gradient-to-r from-green-400 to-green-600 text-white py-2.5 px-4 rounded-xl font-semibold hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <button className="w-full bg-linear-to-r from-green-400 to-green-600 text-white py-2.5 px-4 rounded-xl font-semibold hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg">
                       Mark as Delivered
                     </button>
                   )}
