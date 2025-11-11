@@ -1,14 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import {
-  Menu,
-  X,
-  Heart,
-  Users,
-  MapPin,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import { Menu, X, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function FoodDonationHome() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -165,7 +158,7 @@ export default function FoodDonationHome() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-white to-green-50">
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-emerald-50 via-white to-green-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -187,9 +180,14 @@ export default function FoodDonationHome() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-emerald-400 to-green-600 p-8 shadow-2xl">
+              <div className="aspect-square rounded-2xl bg-linear-to-br from-emerald-400 to-green-600 p-8 shadow-2xl">
                 <div className="w-full h-full bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-8xl">
-                  🤝
+                  <Image
+                    src={"/hero.png"}
+                    alt="hero"
+                    width={700}
+                    height={700}
+                  />
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-orange-400 text-white px-6 py-4 rounded-xl shadow-xl">
@@ -208,7 +206,7 @@ export default function FoodDonationHome() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="text-center p-8 rounded-2xl bg-gradient-to-br from-emerald-50 to-green-50 hover:shadow-xl transition transform hover:scale-105"
+                className="text-center p-8 rounded-2xl bg-linear-to-br from-emerald-50 to-green-50 hover:shadow-xl transition transform hover:scale-105"
               >
                 <div className="text-5xl mb-4">{stat.icon}</div>
                 <div className="text-4xl font-bold text-emerald-600 mb-2">
@@ -224,7 +222,7 @@ export default function FoodDonationHome() {
       {/* How It Works */}
       <section
         id="how-it-works"
-        className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-emerald-50"
+        className="py-16 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-gray-50 to-emerald-50"
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -276,12 +274,12 @@ export default function FoodDonationHome() {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 sm:p-12 shadow-xl">
+            <div className="bg-linear-to-br from-emerald-50 to-green-50 rounded-2xl p-8 sm:p-12 shadow-xl">
               <div className="text-center mb-6">
                 <div className="text-6xl mb-4">
                   {testimonials[currentTestimonial].image}
                 </div>
-                <div className="text-4xl text-emerald-600 mb-4">"</div>
+                <div className="text-4xl text-emerald-600 mb-4">&rdquo;</div>
                 <p className="text-lg sm:text-xl text-gray-700 mb-6 italic">
                   {testimonials[currentTestimonial].text}
                 </p>
@@ -325,7 +323,7 @@ export default function FoodDonationHome() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-emerald-600 to-green-700">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r from-emerald-600 to-green-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Be the reason someone sleeps with a full stomach tonight
