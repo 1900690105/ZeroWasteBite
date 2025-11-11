@@ -20,8 +20,6 @@ const VolunteerDashboard = () => {
     foodType: "all",
     urgency: "all",
   });
-
-  // Mock data for nearby donations
   const nearbyDonations = [
     {
       id: 1,
