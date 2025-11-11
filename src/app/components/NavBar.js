@@ -1,5 +1,6 @@
 "use client";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -10,12 +11,8 @@ function NavBar() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="text-2xl">🍱</div>
-              <span className="text-xl font-bold text-emerald-600">
-                FoodShare
-              </span>
+              <Image src={"/logo.png"} alt="logo" width={50} height={50} />
             </div>
 
             {/* Desktop Menu */}
