@@ -118,7 +118,7 @@ export default function DonorDashboard() {
             <div className="flex items-center space-x-2">
               <div className="text-2xl">🍱</div>
               <span className="text-xl font-bold text-emerald-600">
-                FoodShare
+                zerowastebite
               </span>
             </div>
 

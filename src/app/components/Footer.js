@@ -9,7 +9,9 @@ function Footer() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="text-2xl">🍱</div>
-                <span className="text-xl font-bold text-white">FoodShare</span>
+                <span className="text-xl font-bold text-white">
+                  zerowastebite
+                </span>
               </div>
               <p className="text-sm">
                 Connecting hearts, sharing meals, building communities.
@@ -97,7 +99,7 @@ function Footer() {
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm">
             <p>
-              &copy; 2025 FoodShare. All rights reserved. Made with ❤️ for a
+              &copy; 2025 zerowastebite. All rights reserved. Made with ❤️ for a
               hunger-free world.
             </p>
           </div>

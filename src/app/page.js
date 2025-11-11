@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Menu, X, ChevronLeft, ChevronRight } from "lucide-react";
-import Image from "next/image";
-import NavBar from "./components/NavBar";
+
 import HeroSection from "./components/HeroSection";
 import HowItWorks from "./components/HowItWorks";
 import Testimonials from "./components/Testimonials";
@@ -18,7 +16,6 @@ export default function FoodDonationHome() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
-      <NavBar />
 
       {/* Hero Section */}
       <HeroSection />
