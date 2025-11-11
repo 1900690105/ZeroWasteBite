@@ -89,7 +89,7 @@ const OrganizationsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-poppins">
       {/* Hero Section */}
-      <section className="text-center py-20 bg-gradient-to-r from-[#2ECC71] to-[#F39C12] text-white">
+      <section className="text-center py-20 bg-linear-to-r from-[#2ECC71] to-[#F39C12] text-white">
         <h1 className="text-5xl font-bold mb-6">
           Registered Food Needy Organizations 🍛
         </h1>
@@ -109,7 +109,7 @@ const OrganizationsPage = () => {
               className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="flex items-center mb-6">
-                <Building2 className="text-[#2ECC71] mr-3 w-6 h-6 flex-shrink-0" />
+                <Building2 className="text-[#2ECC71] mr-3 w-6 h-6 shrink-0" />
                 <h2 className="text-2xl font-bold text-gray-800">{org.name}</h2>
               </div>
               <div className="space-y-4 text-gray-600">
@@ -120,7 +120,7 @@ const OrganizationsPage = () => {
                   <span className="ml-2">{org.type}</span>
                 </p>
                 <p className="flex items-center">
-                  <MapPin className="text-[#F39C12] w-5 h-5 mr-2 flex-shrink-0" />
+                  <MapPin className="text-[#F39C12] w-5 h-5 mr-2 shrink-0" />
                   <span>{org.address}</span>
                 </p>
                 <p className="flex items-center">
@@ -130,7 +130,7 @@ const OrganizationsPage = () => {
                   <span className="ml-2">{org.contact}</span>
                 </p>
                 <p className="flex items-center">
-                  <Phone className="text-[#F39C12] w-5 h-5 mr-2 flex-shrink-0" />
+                  <Phone className="text-[#F39C12] w-5 h-5 mr-2 shrink-0" />
                   <span>{org.phone}</span>
                 </p>
                 <div className="pt-2 border-t border-gray-200">
@@ -169,7 +169,7 @@ const OrganizationsPage = () => {
         {!showForm ? (
           <button
             onClick={() => setShowForm(true)}
-            className="px-8 py-4 bg-[#2ECC71] text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:from-[#2ECC71] hover:to-[#27AE60] bg-gradient-to-r transform hover:scale-105"
+            className="px-8 py-4 bg-[#2ECC71] text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:from-[#2ECC71] hover:to-[#27AE60] bg-linear-to-r transform hover:scale-105"
           >
             Register Your Organization
           </button>
@@ -265,7 +265,7 @@ const OrganizationsPage = () => {
             </div>
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-[#2ECC71] text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:from-[#2ECC71] hover:to-[#27AE60] bg-gradient-to-r transform hover:scale-105"
+              className="w-full px-8 py-4 bg-[#2ECC71] text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:from-[#2ECC71] hover:to-[#27AE60] bg-linear-to-r transform hover:scale-105"
             >
               Submit Registration
             </button>

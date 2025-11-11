@@ -32,7 +32,7 @@ const OrganizationRegisterPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-green-500 to-yellow-400 text-white text-center">
+      <section className="py-16 bg-linear-to-r from-green-500 to-yellow-400 text-white text-center">
         <h1 className="text-4xl font-bold mb-4">
           Register Your Organization 🤝
         </h1>
